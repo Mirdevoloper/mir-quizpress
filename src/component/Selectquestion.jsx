@@ -1,4 +1,4 @@
-import { Box, Button, Flex, NumberInput, Switch, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Checkbox, Flex, NumberInput, Switch, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { GoChevronDown } from "react-icons/go";
 
@@ -37,9 +37,8 @@ const Selectquestion = () => {
           <Box>
 
             <Switch.Root >
-              <Switch.HiddenInput/>
-              <Switch.Control  />
-            
+              <Switch.HiddenInput />
+              <Switch.Control />
             </Switch.Root>
           </Box>
         </Flex>
@@ -58,10 +57,10 @@ const Selectquestion = () => {
           </Box>
 
           <Box >
-           < Switch.Root >
+            < Switch.Root >
               <Switch.HiddenInput />
-              <Switch.Control  />
-            
+              <Switch.Control />
+
             </Switch.Root>
           </Box>
         </Flex>
@@ -80,9 +79,9 @@ const Selectquestion = () => {
           </Box>
 
           <Box>
-           < Switch.Root >
+            < Switch.Root >
               <Switch.HiddenInput />
-              <Switch.Control  />            
+              <Switch.Control />
             </Switch.Root>
           </Box>
         </Flex>
@@ -106,12 +105,6 @@ const Selectquestion = () => {
             <NumberInput.Input />
           </NumberInput.Root>
 
-
-
-
-
-
-
         </Flex>
 
         <Flex m='40px' borderRadius={'5px'} justifyContent={'flex-end'}>
@@ -122,13 +115,18 @@ const Selectquestion = () => {
       </Box>
 
       <Box display={'flex'} alignItems={'center'} p='12px' >
-        <GrCheckbox />
+        <Checkbox.Root>
+          <Checkbox.HiddenInput />
+          <Checkbox.Control />
+        </Checkbox.Root>
 
         <Box w='1456px' h='96px' bg='#FFFFFF' shadow={'md'} m='12px'>
 
           <Flex alignItems={'center'} justifyContent={'space-between'}>
             <Box display={'flex'} alignItems={'center'} alignContent={'center'} pt='20px' >
-              <Box p='12px' > <BiGridVertical /> </Box>
+              <Box p='12px' >
+                <BiGridVertical />
+              </Box>
               <Box >
                 <Text fontSize={'16px'} fontWeight={'600'} color={'#006BFF'}>General Knowledge Quiz ! </Text>
                 <Text fontSize={'14px'} fontWeight={'400'} >Category: Would Cup Quiz  </Text>
@@ -138,16 +136,18 @@ const Selectquestion = () => {
               <CiMenuKebab />
             </Box>
           </Flex>
-        </Box>
 
+        </Box>
       </Box>
 
 
       <Box display={'flex'} alignItems={'center'} p='12px' >
-        <GrCheckbox />
+        <Checkbox.Root>
+          <Checkbox.HiddenInput />
+          <Checkbox.Control />
+        </Checkbox.Root>
 
         <Box w='1456px' h='96px' bg='#FFFFFF' shadow={'md'} m='12px'>
-
           <Flex alignItems={'center'} justifyContent={'space-between'}>
             <Box display={'flex'} alignItems={'center'} alignContent={'center'} pt='20px' >
               <Box p='12px' > <BiGridVertical /> </Box>
@@ -166,10 +166,7 @@ const Selectquestion = () => {
 
 
 
-
     </>
-
-
 
 
   )
