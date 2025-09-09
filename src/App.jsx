@@ -13,21 +13,13 @@ const App = () => {
 
 
   return (
-    <>
-
-      {/* <Head /> */}
-      {/* <Main />
-      <Question />
-      <Selectquestion />
-      <Allquestion /> */}
+    <div>
+      <h1>hello i am mir</h1>
+ <Head />
+ <Main />
+ <Question />
       
-       <Menubar />
-
-      <Outlet />
-     
-
-
-    </>
+    </div>
   )
 }
 
