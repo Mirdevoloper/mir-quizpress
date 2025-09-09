@@ -2,10 +2,17 @@
 import { Heading, Box, Field, Textarea, Text, Flex, NativeSelect, Button, Image } from '@chakra-ui/react'
 import React from 'react'
 import { GoPlus } from "react-icons/go";
+import Head from './Head';
+import Question from './Question';
+
 
 const main = () => {
     return (
         <div >
+             
+
+ 
+             
             <Box  w='820px' h='418px' margin='0 auto' mt='25px' p='25px' display='flex' bg='#FFFFFF' shadow={'md'} >
                <Box >
 
